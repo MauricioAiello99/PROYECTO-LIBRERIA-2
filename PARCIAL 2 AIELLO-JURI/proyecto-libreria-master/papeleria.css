@@ -1,0 +1,245 @@
+body {
+   border: solid 1px #fff8d4;
+   background-color: #fff8d4;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0px;
+   position: relative;
+}
+
+a:link {
+   text-decoration-line: none;
+   color: black;
+}
+
+a:visited {
+   color: black;
+}
+
+a:hover {
+   color: white;
+}
+
+header {
+   border: solid 5px #ffb884;
+   background-color: #ffb884;
+   display: flex;
+   min-height: 70px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+
+}
+form img {
+   width: 10px;
+   border-radius: 10px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+   height: 85px;
+   width: 85px;
+   margin-right: 10px;
+   border-radius: 100px;
+}
+.papeleria {
+   display: flex;
+   justify-content: center;
+}
+
+.datos {
+   margin: 0px 30px;
+   flex-direction: row;
+
+}
+#carrito-button{
+
+   padding: 10px 25px;
+   font-size: 1.5rem;
+   border-radius: 25px;
+   position: relative;
+   background-color: #c0d1c2;
+   border-color: #c0d1c2;
+   color: white;
+   transition: transform 0.3s ease;  
+}
+
+.datos img { 
+   height: 20px;
+}
+
+.datos a {
+   font-weight: 600;
+   padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.infgeneral{
+    display: flex;
+    justify-content:right ;
+    position: relative;
+    top:20px
+ }
+ .productos{
+   width: 80%;
+   margin: 20px auto;
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+
+ .producto-card {
+   box-shadow: 5px 5px 5px #0005;
+   text-align: center;
+   margin: 1rem;
+   transition: all 0.5s;
+ }
+
+ .producto-card:hover{
+   transform: scale(1.1);
+ }
+.producto-card p{
+   display: inline-block;
+
+}
+.producto-precio{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   margin: 1.5rem;
+   font-size: 1.2rem;
+}
+ .producto-card img{
+   width: 300px;
+   height: 300px;
+   align-items: center;
+
+ }
+ 
+ 
+
+ .inicio{
+    display: flex;
+    justify-content: left;
+    top: 120px;
+    margin: 50px;
+ }
+ .binicio{
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    position: relative;
+    background-color:#c0d1c2 ;
+    border-color: #c0d1c2;
+    color: white;
+    transition: transform 0.3s ease;  
+}
+ .binicio::after, .boton3::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #c0d1c2;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+ }
+ .binicio :hover{
+    transform: translate(-12px, -12px);
+ }
+ .binicio:hover::after{
+    transform: translate(6px, 6px);
+ }
+ .binicio:hover::before{
+    transform: translate(12px, 12px);
+ }
+ .footer {
+   border: solid 1px #ffb884;
+   background-color: #ffb884;
+   min-height: 70px;
+   max-height: 150px;
+   padding: 10px 0;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.footer-row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer-links {
+   width: 50%;
+   padding: 0 10px;
+
+}
+
+.footer-links ul li a {
+   font-size: 18px;
+   text-decoration: none;
+   color: #2e4347;
+   display: block;
+   margin-bottom: 15px;
+   transition: all .3seg ease;
+}
+
+.footer-links ul li a:hover {
+   color: #2e4347;
+   padding-left: 6px;
+}
+
+.social-link a {
+   display: inline-block;
+   min-height: 40px;
+   width: 40px;
+   background-color: #2e4347;
+   margin: 0 10px 10px 0;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   color: white;
+   transition: all .5s ease;
+}
+
+.social-link h4 {
+   font-size: 20px;
+   color: #2e4347;
+   margin-right: 20px;
+   margin-bottom: 0%;
+   font-weight: 500;
+   border-bottom: 2px solid #2e4347;
+   padding-bottom: 10px;
+   display: inline-block;
+}
+
+.social-link a:hover {
+   background-color: #c0d1c2;
+}
+
+@media(max-width:991px) {
+   .footer-row {
+       text-align: center;
+   }
+
+   .footer-links {
+       width: 100%;
+       margin-bottom: 30px;
+   }
+}
